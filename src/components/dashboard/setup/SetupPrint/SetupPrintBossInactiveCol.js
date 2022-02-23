@@ -1,6 +1,6 @@
 // import { CCol, CContainer, CRow, CFormSelect } from "@coreui/react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 // import SetupPlayerRow from "../../components/dashboard/setup/SetupPlayerRow";
 // import { getAllRaids } from "../../services/raidsService";
 // import { getBossesOfRaid } from "../../services/bosskillService";
