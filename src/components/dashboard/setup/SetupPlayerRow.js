@@ -1,5 +1,5 @@
 //BlogListItem.js
-// import { useState, useEffect, memo } from "react";
+import { memo } from "react";
 // import { capitalize } from "../../../services/generalService";
 import SetupPlayerOptionButton from "./SetupPlayerOptionButton";
 
@@ -79,5 +79,5 @@ const SetupPlayerRow = ({
     </div>
   );
 };
-//eslint-disable-next-line
+
 export default memo(SetupPlayerRow);
