@@ -16,7 +16,7 @@ import {
 } from "../../../services/bosskillService";
 import { useNavigate } from "react-router-dom";
 import "./KillFeedItem.scss";
-import { capitalize } from "../../../services/generalService";
+// import { capitalize } from "../../../services/generalService";
 
 const KillFeedItem = (props) => {
   let navigate = useNavigate();

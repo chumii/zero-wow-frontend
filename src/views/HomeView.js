@@ -20,7 +20,9 @@ const HomeView = () => {
   const [latestBoss, setLatestBoss] = useState();
   const [latestBossCap, setLatestBossCap] = useState();
   const [latestRaid, setLatestRaid] = useState();
+  //eslint-disable-next-line
   const [latestBossObj, setLatestBossObj] = useState([]);
+  //eslint-disable-next-line
   const [latestRaidDefeatedAt, setLatestRaidDefeatedAt] = useState();
   const [latestBossRoster, setLatestBossRoster] = useState([]);
   const [zeroInfoFrameIsShown, setZeroInfoFrameIsShown] = useState(false);

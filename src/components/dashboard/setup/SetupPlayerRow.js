@@ -1,6 +1,6 @@
 //BlogListItem.js
-import { useState, useEffect, memo } from "react";
-import { capitalize } from "../../../services/generalService";
+// import { useState, useEffect, memo } from "react";
+// import { capitalize } from "../../../services/generalService";
 import SetupPlayerOptionButton from "./SetupPlayerOptionButton";
 
 const SetupPlayerRow = ({
@@ -79,7 +79,5 @@ const SetupPlayerRow = ({
     </div>
   );
 };
-
+//eslint-disable-next-line
 export default memo(SetupPlayerRow);
-
-// Kadergröße, Avg Ilvl, Tanks / Heal / Dps Counter

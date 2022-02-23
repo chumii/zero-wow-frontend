@@ -1,8 +1,8 @@
 //BlogListItem.js
 import { useState, useEffect } from "react";
-import CIcon from "@coreui/icons-react";
-import * as icon from "@coreui/icons";
-import { CFormSwitch, CSpinner, CAlert } from "@coreui/react";
+// import CIcon from "@coreui/icons-react";
+// import * as icon from "@coreui/icons";
+import { CFormSwitch, CSpinner } from "@coreui/react";
 import {
   deleteMember,
   updateMember,
@@ -33,6 +33,7 @@ const SingleMember = (props) => {
     setCrawledAt(formatDate);
     createItemBonusIdString();
     createItemGemString();
+    //eslint-disable-next-line
   }, []);
 
   const createItemBonusIdString = () => {
@@ -59,6 +60,7 @@ const SingleMember = (props) => {
 
   const handleActiveCheckbox = async (event) => {
     setIsActive(event.target.checked);
+    //eslint-disable-next-line
     const response = await updateMember(props.member._id, {
       isActive: event.target.checked,
     });
@@ -84,6 +86,7 @@ const SingleMember = (props) => {
         }, 3000);
         return;
       } else {
+        //eslint-disable-next-line
         const response = await updateMember(props.member._id, {
           profile: newData,
         });
@@ -166,6 +169,7 @@ const SingleMember = (props) => {
           {(() => {
             let list = [];
             for (const key in gearSet) {
+              //eslint-disable-next-line
               const name = key.replace(/-/g, " ");
               if (key !== "shirt" && key !== "tabard") {
                 list.push(

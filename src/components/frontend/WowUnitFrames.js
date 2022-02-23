@@ -7,13 +7,14 @@ import WowUnitFramePlayer from "./WowUnitFramePlayer";
 import WowUnitFrameBoss from "./WowUnitFrameBoss";
 
 const WowUnitFrames = (props) => {
-  const logoSvg = process.env.PUBLIC_URL + "/img/logo.svg";
+  // const logoSvg = process.env.PUBLIC_URL + "/img/logo.svg";
   // const boss_slug = props.boss_slug;
   const [bossSlug, setBossSlug] = useState(props.boss_slug);
   const [raidSlug, setRaidSlug] = useState(props.raid_slug);
 
   useEffect(() => {
     getBossSlug();
+    //eslint-disable-next-line
   }, []);
 
   const getBossSlug = () => {

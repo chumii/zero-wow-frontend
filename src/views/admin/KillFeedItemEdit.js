@@ -23,6 +23,7 @@ const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 const KillFeedItemEditView = (props) => {
   let { id } = useParams();
+  //eslint-disable-next-line
   const navigate = useNavigate();
   const [titleErrorVisible, setTitleErrorVisible] = useState(false);
   const [contentErrorVisible, setContentErrorVisible] = useState(false);
@@ -32,6 +33,7 @@ const KillFeedItemEditView = (props) => {
     return () => {
       setPost([]);
     };
+    //eslint-disable-next-line
   }, []);
   // console.log(post);
   async function getBlogPost(id) {

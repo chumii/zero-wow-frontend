@@ -32,6 +32,7 @@ const BlogListItemEditView = (props) => {
     return () => {
       setPost([]);
     };
+    //eslint-disable-next-line
   }, []);
   // console.log(post);
   async function getBlogPost(id) {
@@ -63,6 +64,7 @@ const BlogListItemEditView = (props) => {
       setContentErrorVisible(true);
       return;
     }
+    //eslint-disable-next-line
     const response = await updateBlogPost(post, id);
     navigate("/dashboard/bloglist");
     setPost({

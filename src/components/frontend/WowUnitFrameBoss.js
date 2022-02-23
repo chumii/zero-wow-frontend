@@ -6,13 +6,14 @@ import { useEffect, useState } from "react";
 import { capitalize } from "../../services/generalService";
 
 const WowUnitFrameBoss = (props) => {
-  const logoSvg = process.env.PUBLIC_URL + "/img/logo.svg";
+  // const logoSvg = process.env.PUBLIC_URL + "/img/logo.svg";
   // const boss_slug = props.boss;
   const [bossSlug, setBossSlug] = useState(props.boss);
   const [raidSlug, setRaidSlug] = useState(props.raid);
 
   useEffect(() => {
     getBossSlug();
+    //eslint-disable-next-line
   }, []);
 
   const getBossSlug = () => {

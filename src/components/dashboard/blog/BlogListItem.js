@@ -27,6 +27,7 @@ const BlogListItem = (props) => {
         setPostedAt(formatDate);
       })
       .catch((error) => console.log(error));
+    //eslint-disable-next-line
   }, []);
 
   const handleDelete = async (event) => {

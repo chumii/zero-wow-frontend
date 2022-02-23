@@ -14,7 +14,7 @@ import DashboardSidebar from "../../components/dashboard/Sidebar";
 import SetupPrintBossCol from "../../components/dashboard/setup/SetupPrint/SetupPrintBossCol";
 import SetupPrintBossInactiveCol from "../../components/dashboard/setup/SetupPrint/SetupPrintBossInactiveCol";
 import { getBossesOfRaid } from "../../services/bosskillService";
-import { capitalize, wedOrSun } from "../../services/generalService";
+// import { capitalize, wedOrSun } from "../../services/generalService";
 
 import {
   getSetupById,
@@ -40,6 +40,7 @@ const PrepareSetupView = () => {
     getRoster();
     getSetupById(setBosses, id, setRaidSlug, getBossesOfRaidSelected);
     getFirstBossRoster(id);
+    //eslint-disable-next-line
   }, []);
 
   const initBossColVisible = (arr) => {

@@ -1,5 +1,5 @@
 //BlogListItem.js
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { FaDiscord, FaEdit, FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { deleteSetup } from "../../../services/setupService";
@@ -18,11 +18,11 @@ const SetupListItem = (props) => {
   const formatDate = new Intl.DateTimeFormat("de-DE").format(date);
   const nextDate = wedOrSun(date);
 
-  useEffect(() => {
-    // const date = new Date(setup.postedAt);
-    // const formatDate = new Intl.DateTimeFormat("de-DE").format(date);
-    // setPostedAt(date);
-  }, []);
+  // useEffect(() => {
+  //   // const date = new Date(setup.postedAt);
+  //   // const formatDate = new Intl.DateTimeFormat("de-DE").format(date);
+  //   // setPostedAt(date);
+  // }, []);
 
   const handleDelete = async (event) => {
     event.preventDefault();

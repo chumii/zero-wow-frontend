@@ -7,7 +7,7 @@ import { getAllBossKills } from "../../services/bosskillService";
 import WowQuestTrackerProgress from "./WowQuestTrackerProgress";
 import WowQuestTrackerBlogList from "./WowQuestTrackerBlogList";
 // import { BiCopyright } from "react-icons/bi";
-import { GiUnicorn } from "react-icons/gi";
+// import { GiUnicorn } from "react-icons/gi";
 
 const WowQuestTracker = (props) => {
   const [guild, setGuild] = useState({});

@@ -1,6 +1,6 @@
 import { CCol, CContainer, CRow, CFormSelect } from "@coreui/react";
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DashboardSidebar from "../../components/dashboard/Sidebar";
 import SetupPlayerRow from "../../components/dashboard/setup/SetupPlayerRow";
 import { getAllRaids } from "../../services/raidsService";
@@ -9,8 +9,8 @@ import { capitalize } from "../../services/generalService";
 import { getAllMember } from "../../services/memberService";
 import {
   saveSetup,
-  getAllSetups,
-  getLatestSetup,
+  // getAllSetups,
+  // getLatestSetup,
 } from "../../services/setupService";
 // import { getAllBlogPosts } from "../../services/blogService";
 // import BlogListItem from "../../components/dashboard/blog/BlogListItem";
@@ -27,11 +27,14 @@ const CreateSetupView = () => {
   const [raidSlug, setRaidSlug] = useState("");
   const [bosses, setBosses] = useState([]);
   const navigate = useNavigate();
+  //eslint-disable-next-line
   const [_id, setId] = useState(null);
   const [raids, setRaids] = useState([]);
   const [bossesOfRaid, setBossesOfRaid] = useState([]);
+  //eslint-disable-next-line
   const [bossSlug, setBossSlug] = useState("");
   const [roster, setRoster] = useState([]);
+  //eslint-disable-next-line
   const [setup, setSetup] = useState([]);
   // const [gridStyle, setGridStyle] = useState({});
   // const [playersIn, setPlayersIn] = useState([]);

@@ -5,28 +5,29 @@ import { registerUser } from "../services/authService";
 const RegisterView = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({
-    name: '',
-    email: '',
-    password: '',
-  })
+    name: "",
+    email: "",
+    password: "",
+  });
 
   const handleChange = (event) => {
     setUser({
       ...user,
-      [event.target.name]: event.target.value
-    })
-  }
+      [event.target.name]: event.target.value,
+    });
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    //eslint-disable-next-line
     const response = await registerUser(user);
     setUser({
-      name: '',
-      email: '',
-      password: '',
-    })
-    navigate('/')
-  }
+      name: "",
+      email: "",
+      password: "",
+    });
+    navigate("/");
+  };
 
   return (
     <div className="container mt-5">

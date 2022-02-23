@@ -20,7 +20,7 @@ import {
 import DashboardGuildProgressView from "../../components/dashboard/guild/DashboardGuildProgressView";
 import GuildRecruitment from "../../components/dashboard/guild/GuildRecruitment";
 import { capitalize } from "../../services/generalService";
-import { getAllRaidsTwo, updateRaid } from "../../services/raidsService";
+// import { getAllRaidsTwo, updateRaid } from "../../services/raidsService";
 
 import "./Dashboard.scss";
 
@@ -53,7 +53,7 @@ const AdminGuildProfilView = () => {
       oldGuild.guildprofile.name
     );
     const newGuild = await newGuildProfile;
-
+    //eslint-disable-next-line
     const updatedGuild = await updateGuild(oldGuild._id, {
       guildprofile: newGuild,
     });

@@ -13,6 +13,7 @@ const RaidkaderSingleMember = (props) => {
     setGearSet(member.profile.gear.items);
     createItemBonusIdString();
     createItemGemString();
+    //eslint-disable-next-line
   }, []);
   // console.log(member);
 
@@ -136,6 +137,7 @@ const RaidkaderSingleMember = (props) => {
         {(() => {
           let list = [];
           for (const key in gearSet) {
+            //eslint-disable-next-line
             const name = key.replace(/-/g, " ");
             if (key !== "shirt" && key !== "tabard") {
               list.push(

@@ -23,11 +23,14 @@ const EditSetupView = () => {
   const [raidSlug, setRaidSlug] = useState("");
   const [bosses, setBosses] = useState([]);
   let { id } = useParams();
+  //eslint-disable-next-line
   const [_id, setId] = useState(id);
   const [raids, setRaids] = useState([]);
   const [bossesOfRaid, setBossesOfRaid] = useState([]);
+  //eslint-disable-next-line
   const [bossSlug, setBossSlug] = useState("");
   const [roster, setRoster] = useState([]);
+  //eslint-disable-next-line
   const [setup, setSetup] = useState([]);
   // const [playersIn, setPlayersIn] = useState([]);
 
@@ -36,6 +39,7 @@ const EditSetupView = () => {
     getRoster();
     // buildSetupTemplate();
     getSetupById(setBosses, id, setRaidSlug, getBossesOfRaidSelected);
+    //eslint-disable-next-line
   }, []);
 
   const handleRaidSlugSelect = async (event) => {

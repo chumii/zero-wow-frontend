@@ -1,11 +1,11 @@
-import { CCol, CContainer, CRow, CFormSelect } from "@coreui/react";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { CCol, CContainer, CRow, CFormSelect } from "@coreui/react";
+// import { useState, useEffect } from "react";
+// import { useParams } from "react-router-dom";
 // import SetupPlayerRow from "../../components/dashboard/setup/SetupPlayerRow";
 // import { getAllRaids } from "../../services/raidsService";
 // import { getBossesOfRaid } from "../../services/bosskillService";
 // import { capitalize } from "../../services/generalService";
-import { getAllMember } from "../../../../services/memberService";
+// import { getAllMember } from "../../../../services/memberService";
 // import { saveSetup, getSetupById } from "../../services/setupService";
 // import { getAllBlogPosts } from "../../services/blogService";
 // import BlogListItem from "../../components/dashboard/blog/BlogListItem";
@@ -18,11 +18,11 @@ import "../../../../views/admin/PrepareSetup.scss";
 */
 
 const SetupPrintBossCol = (props) => {
-  let { id } = useParams();
+  // let { id } = useParams();
   // const [roster, setRoster] = useState([]);
   const boss = props.boss;
   const raidSlug = props.raidSlug;
-  const [isShown, setIsShown] = useState(true);
+  // const [isShown, setIsShown] = useState(true);
   // console.log(boss);
   // useEffect(() => {
   //   // setRoster(props.roster);

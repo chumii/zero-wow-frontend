@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function GuildRecruitSingle(props) {
+  //eslint-disable-next-line
   const [klasse, setKlasse] = useState(props.classObj);
   const opacityStyle = [{ opacity: "0.3" }, { opacity: "1" }];
   return (

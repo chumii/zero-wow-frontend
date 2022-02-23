@@ -63,6 +63,7 @@ const KillFeedCreateNewView = () => {
   }, []);
 
   const getRaids = async () => {
+    //eslint-disable-next-line
     const response = await getAllRaids(setRaids);
     // const slugs = await response.data;
     // setRaids(slugs);

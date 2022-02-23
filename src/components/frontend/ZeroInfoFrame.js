@@ -2,7 +2,7 @@ import { useState } from "react";
 import GuildInfo from "./subframes/GuildInfo";
 import GuildRecruitInfo from "./subframes/GuildRecruitInfo";
 import GuildRecruitOpen from "./subframes/GuildRecruitOpen";
-import Raidkader from "./subframes/Raidkader";
+// import Raidkader from "./subframes/Raidkader";
 // import { getAllBlogPosts } from "../services/blogService";
 // import { getAllBossKills } from "../services/bosskillService";
 // import WowFrame from "../components/frontend/WowFrame";

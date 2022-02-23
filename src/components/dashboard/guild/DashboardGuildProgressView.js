@@ -8,13 +8,13 @@ import {
   CCardBody,
   CCardTitle,
   CCardText,
-  CFormCheck,
+  // CFormCheck,
 } from "@coreui/react";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 // import CIcon from "@coreui/icons-react";
 // import * as icon from "@coreui/icons";
-import { getAllRaidsTwo, updateRaid } from "../../../services/raidsService";
+// import { getAllRaidsTwo, updateRaid } from "../../../services/raidsService";
 
 const DashboardGuildProgressView = (props) => {
   const progress = props.progress;

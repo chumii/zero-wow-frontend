@@ -9,6 +9,7 @@ const SetupPlayerOptionButton = ({
 }) => {
   const boss_slug = boss.boss_slug;
   const [clickCount, setClickCount] = useState(0);
+  //eslint-disable-next-line
   const [playerStatus, setPlayerStatus] = useState("");
 
   const classes = ["In", "InOff", "InTwink", "Backup", "Abg", "Out"];
