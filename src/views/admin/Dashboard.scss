@@ -1,0 +1,153 @@
+@import "../../styles/variables";
+
+.adminContainer {
+  display: grid;
+  grid-template-columns: 0.2fr 1.7fr;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-template-areas: "sidebar content";
+
+  /* background-color: rgba(0, 0, 21, 0.2); */
+}
+.adminSidebar {
+  grid-area: sidebar;
+  min-height: 100vh;
+  background-color: $bg-dark;
+  border-right: 1px solid $gold;
+  .sidebar {
+    background-color: $bg-dark;
+    .nav-title {
+      color: $gold;
+    }
+    .nav-link:hover {
+      background-color: $gold;
+      color: $bg-dark;
+    }
+  }
+}
+.adminContent {
+  // border: 1px solid green;
+  color: $offwhite;
+  grid-area: content;
+  padding: 2rem 5rem 2rem 5rem;
+  color: $offwhite;
+
+  .rosterSummary {
+    // border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    // padding-right: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $gold;
+    font-size: 0.8rem;
+    .rosterCount {
+      // border: 1px solid green;
+      font-weight: 500;
+      padding-right: 0.5rem;
+      // border: 1px solid $gold;
+      // border-radius: 100%;
+    }
+    .rosterAvgIlvl {
+      // border: 1px solid yellow;
+      font-weight: 500;
+      padding-left: 0.5rem;
+      color: $itemSuperior;
+    }
+  }
+
+  .dashboardHeader {
+    color: $offwhite;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid $bg-light;
+  }
+
+  .form-label {
+    color: $offwhite;
+    margin-top: 1rem;
+  }
+
+  .form-select,
+  .form-control {
+    background-color: $bg-dark;
+    border-color: $gold;
+    color: $offwhite;
+  }
+
+  a {
+    color: $gold;
+    text-decoration: none;
+    &:hover {
+      color: $itemPoor;
+    }
+  }
+
+  .deleteButton {
+    color: $gold;
+    :hover {
+      // cursor: pointer;
+      color: $offwhite;
+    }
+  }
+
+  .editButton {
+    // color: rgb(0, 146, 156);
+    // cursor: pointer;
+    margin-right: 0.5rem;
+    &:hover {
+      color: rgb(124, 124, 124);
+    }
+  }
+  .detailButton {
+    // color: rgb(0, 146, 156);
+    // cursor: pointer;
+    margin-right: 0.5rem;
+    &:hover {
+      color: rgb(124, 124, 124);
+    }
+  }
+
+  .blogListContainer,
+  .killFeedItemListContainer {
+    // border: 1px solid red;
+    width: 100%;
+  }
+
+  .dashboardGuildProfileContainer {
+    .dashBoardCard {
+      color: $offwhite;
+      background-color: $bg-dark;
+      border: 1px solid $gold;
+      border-radius: $border-radius;
+      margin-top: 1rem;
+
+      .dashBoardCardHeader {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .profileHeader {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card-header {
+        color: $gold;
+        font-weight: bold;
+        border-bottom: 1px solid $bg-dark-border;
+      }
+      .progress {
+        background-color: $bg-dark-border;
+      }
+      .progress-bar {
+        background-color: $gold;
+      }
+    }
+  }
+}

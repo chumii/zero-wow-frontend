@@ -1,0 +1,40 @@
+@import "../../../styles/variables";
+
+.recruitCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .recruitEditButton {
+    border: 1px solid $gold;
+    border-radius: $border-radius;
+    padding: 0.3rem 1rem;
+  }
+}
+
+.recruitmentContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  .singleRecruitContainer {
+    // padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid red;
+    .singleRecruitSpecContainer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.4rem;
+      img {
+        height: 20px;
+        // border: 1px solid $gold;
+        // border-radius: $border-radius;
+      }
+    }
+  }
+}

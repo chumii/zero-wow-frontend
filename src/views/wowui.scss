@@ -1,0 +1,872 @@
+@import "../styles/variables";
+
+.innershadowlight {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.innershadowstrong {
+  -moz-box-shadow: inset 0 0 20px 2px #000000;
+  -webkit-box-shadow: inset 0 0 20px 2px #000000;
+  box-shadow: inset 0 0 20px 2px #000000;
+}
+
+.achievementContainer {
+  font-family: "Friz Quadrata TT";
+  display: flex;
+  position: absolute;
+  top: 3rem;
+  justify-content: center;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+  .achievement {
+    width: 310px;
+    height: 90px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4.3rem 1fr;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    .achievementBossAvatar {
+      margin-left: 0.7rem;
+      width: 59px;
+      height: 59px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .achievementBossInfo {
+      color: #fff;
+      text-align: center;
+      margin-right: 1rem;
+
+      // border: 1px solid green;
+      padding: 0;
+      margin: 0;
+      .achievementDate {
+        // font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-bottom: 20px;
+        margin-top: 8px;
+        height: 1rem;
+        vertical-align: top;
+        font-size: 0.7rem;
+        color: $wowUiBg;
+        // border: 1px solid green;
+      }
+      .achievementBossName {
+        // padding-top: 20px;
+        margin: 0px 0 20px 0;
+        height: 2rem;
+        text-shadow: 2px 2px 2px #000;
+        // border: 1px solid red;
+      }
+    }
+  }
+}
+
+.HomeViewContainer {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Friz Quadrata TT";
+
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  row-gap: 1rem;
+  // padding: 10rem 30rem;
+  // border: 1px solid red;
+  .HomeViewMain {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 3rem;
+    margin-inline: 3rem;
+    grid-template-columns: 1fr 20rem;
+    grid-template-rows: 1fr;
+    // border: 1px solid red;
+    // align-content: center;
+    // justify-items: space-between;
+  }
+  .HomeViewUnitFrames {
+    // border: 1px solid blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.WowFrame {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // grid-auto-rows: 2rem auto;
+  width: 900px;
+  // height: 216px;
+  z-index: 999;
+  text-shadow: 2px 2px 2px #000;
+  .titleBar {
+    // border: 1px solid red;
+    display: flex;
+    margin-bottom: 0.3rem;
+    .logoCircle {
+      height: 4rem;
+      width: 4rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $bg-dark;
+      border: 2px solid $gold;
+      border-radius: 50%;
+      position: relative;
+      top: -0.5rem;
+      z-index: 2;
+      -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.7);
+      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.7);
+    }
+    .title {
+      background-color: $wowUiBg;
+      border: 2px solid $wowUiBorderLight;
+      border-radius: $wowUiBorderRadius;
+      width: 100%;
+      height: 1.7rem;
+      margin-left: -0.4rem;
+      text-align: center;
+      z-index: 0;
+    }
+    .closeBtn {
+      background-color: $wowUiCloseBtnBg;
+      color: $wowUiCloseBtnFont;
+      width: 1.7rem;
+      height: 1.7rem;
+      border: 2px solid $wowUiBorderLight;
+      border-radius: $wowUiBorderRadius;
+      text-align: center;
+      font-weight: bold;
+      // cursor: pointer;
+      &:hover {
+        background-color: $wowUiCloseBtnBgHover;
+      }
+    }
+  }
+
+  .contentWrapper {
+    border: 1px solid $wowUiBorderLight;
+    border-radius: $wowUiBorderRadius;
+    // padding-top: 3rem;
+    margin-top: -2.7rem;
+    margin-left: 0.4rem;
+    background-color: $wowUiBg;
+
+    z-index: 1;
+    display: flex;
+    max-height: 35rem;
+    // grid-template-columns: 220px auto;
+    // grid-auto-rows: max(400px);
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: $wowUiBg $wowUiBorderLight;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 1rem;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: $wowUiBgHover;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: $wowUiBg;
+      border-radius: $wowUiBorderRadius;
+      border: 1px solid $wowUiBorderLight;
+    }
+
+    .selectionTabsLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 3rem;
+      border-radius: $wowUiBorderRadius;
+      padding-bottom: 2rem;
+      min-width: 220px;
+
+      background: rgb(13, 16, 27);
+      background: linear-gradient(
+        0deg,
+        rgba(13, 16, 27, 1) 0%,
+        rgba(30, 34, 46, 1) 35%,
+        rgba(41, 52, 66, 1) 100%
+      );
+
+      .selectionTab {
+        max-height: 6rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        background: rgb(8, 14, 27);
+        background: linear-gradient(
+          0deg,
+          rgba(8, 14, 27, 1) 0%,
+          rgba(33, 44, 66, 1) 57%,
+          rgba(33, 43, 64, 1) 100%
+        );
+        border-radius: $wowUiBorderRadius;
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
+        &:hover {
+          // cursor: pointer;
+          -moz-box-shadow: inset 0 0 10px $wowUiBorderLight;
+          -webkit-box-shadow: inset 0 0 10px $wowUiBorderLight;
+          box-shadow: inset 0 0 10px $wowUiBorderLight;
+        }
+      }
+    }
+    .mainContent {
+      // border: 1px solid yellow;
+      padding: 3rem 2rem;
+      border-radius: $wowUiBorderRadius;
+      width: 100%;
+      overflow-y: auto;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $wowUiQuestMark;
+        padding-bottom: 0.8rem;
+      }
+    }
+    .aboutModule {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 1.5rem;
+      gap: 1rem;
+      .aboutModuleContactBox {
+        text-align: center;
+        border: 1px solid rgba(0, 112, 222, 0.2);
+        border-radius: 13px;
+        position: relative;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: rgba($wowUiBgHover, 0.5);
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url("../../public/img/bnet.svg");
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: 40%;
+          z-index: 1;
+          opacity: 0.2;
+        }
+        .aboutModuleContactSubtitleGuild {
+          color: $mint;
+        }
+        .aboutModuleContactSubtitleRaid {
+          color: $chatInstanceLeader;
+        }
+        .aboutModuleContactId {
+          color: $wowUiQuestMark;
+        }
+      }
+    }
+    .raidZeiten {
+      padding-left: 1rem;
+    }
+    .RecruitSingleContainer {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 2fr 6fr;
+      justify-content: flex-start;
+      gap: 2rem;
+      .RecruitSingleSpecs {
+        display: flex;
+        gap: 0.5rem;
+        .RecruitSingleSpec {
+          img {
+            width: 20px;
+            border: 1px solid rgba($gold, 0.5);
+            border-radius: $border-radius;
+          }
+        }
+      }
+    }
+    .archiveContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .archiveSingle {
+        font-size: 0.9rem;
+        background-color: $wowUiBgHover;
+        padding: 0.3rem 0.5rem;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: space-between;
+        .archiveTitle {
+          color: rgba($wowUiQuestMark, 1);
+          &:hover {
+            color: #fff;
+          }
+          svg {
+            // border: 1px solid red;
+            // margin-top: 0.5rem;
+            font-size: 0.8rem;
+            // box-shadow: 2px 2px 2px #000;
+            -webkit-filter: drop-shadow(2px 2px 2px #000);
+            filter: drop-shadow(2px 2px 2px #000);
+            margin-inline: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.WowUnitFrameContainer {
+  // position: absolute;
+  bottom: 10rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  // border: 1px solid yellow;
+  display: flex;
+  gap: 3rem;
+  .WowUnitFramePlayer,
+  .WowUnitFrameBoss {
+    width: 18rem;
+    display: flex;
+    height: 60px;
+    .logoCircle {
+      // height: 60px;
+      width: 70px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $bg-dark;
+      border: 2px solid $gold;
+      border-radius: 50%;
+      position: relative;
+      // top: -0.5rem;
+      z-index: 2;
+      -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.7);
+      box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.7);
+    }
+
+    .bars {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      // align-items: center;
+      // align-content: center;
+      justify-content: center;
+      // justify-items: center;
+      .healthBar,
+      .nameBar {
+        border: 2px solid $wowUiBorderLight;
+        border-radius: $wowUiBorderRadius;
+        width: 100%;
+        // height: 1.7rem;
+        margin-left: -0.4rem;
+        text-align: center;
+        z-index: 0;
+      }
+      .nameBar {
+        background-color: rgba($wowUiBg, 0.7);
+        height: 2rem;
+      }
+      .healthBar {
+        background-color: $grun;
+        height: 1.6rem;
+      }
+    }
+  }
+  .WowUnitFrameBoss {
+    .bars {
+      .healthBar,
+      .nameBar {
+        margin-left: 0.4rem;
+        // margin-right: -0.4rem;
+      }
+      .healthBar {
+        background-color: $wowUiCloseBtnBg;
+      }
+    }
+  }
+}
+
+.WowMenuBar {
+  border: 1px solid $wowUiBorderLight;
+  border-radius: $wowUiBorderRadius;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: $wowUiBg;
+  gap: 0.2rem;
+  padding: 0.2rem 0.2rem;
+  .WowMenuBarButton {
+    background-color: $wowUiBg;
+    border: 1px solid $wowUiBorderLight;
+    border-radius: $wowUiBorderRadius;
+    padding-inline: 0.8rem;
+    height: 2rem;
+    width: 1.3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bg-dark;
+    color: $wowUiQuestMark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    // svg {
+    //   border: 1px solid red;
+    // }
+    &:hover {
+      background-color: $wowUiBgHover;
+      // cursor: pointer;
+    }
+  }
+}
+
+.WowQuestTracker {
+  z-index: 10;
+  .WowQuestTrackerProgress {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 33%,
+      rgba(0, 0, 0, 0.4) 69%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: max-content;
+    text-shadow: 2px 2px 2px #000;
+    border-bottom: 1px solid rgba($wowUiQuestMark, 0.5);
+    .questTrackerTitle {
+      background: rgb(172, 110, 10);
+      background: radial-gradient(
+        circle,
+        rgba(121, 79, 11, 0.5) 0%,
+        rgba(107, 69, 7, 0.5) 47%,
+        rgba(60, 41, 12, 0.2) 74%,
+        rgba(50, 34, 6, 0.1) 100%
+      );
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      border-top: 1px solid rgba($wowUiQuestMark, 0.5);
+      border-bottom: 1px solid rgba($wowUiQuestMark, 0.5);
+      text-align: center;
+      color: $wowUiQuestTrackerTitle;
+    }
+    .questTrackerProgress {
+      // margin-top: 1rem;
+      margin: 1rem 1rem 2rem 1rem;
+      .questTrackerProgressTitle {
+        display: flex;
+        justify-content: space-between;
+        color: $wowUiQuestTrackerTitle;
+        font-size: 0.9rem;
+      }
+      .progress {
+        margin-top: 0.5rem;
+        background-color: rgba($wowUiBg, 0.7);
+        border: 1px solid $wowUiQuestTrackerTitle;
+      }
+      .progress-bar {
+        background-color: $wowUiQuestMark;
+      }
+    }
+  }
+  .WowQuestTrackerBlogList {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 33%,
+      rgba(0, 0, 0, 0.4) 69%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: max-content;
+    text-shadow: 2px 2px 2px #000;
+    border-bottom: 1px solid rgba($wowUiQuestMark, 0.5);
+    svg {
+      // border: 1px solid red;
+      // margin-top: 0.5rem;
+      font-size: 0.8rem;
+      // box-shadow: 2px 2px 2px #000;
+      -webkit-filter: drop-shadow(2px 2px 2px #000);
+      filter: drop-shadow(2px 2px 2px #000);
+      margin-right: 0.5rem;
+    }
+    .WowQuestTrackerBlogListItem {
+      padding: 0.3rem 1rem;
+      .WowQuestTrackerBlogListItemHeader {
+        display: flex;
+        justify-content: space-between;
+        color: $wowUiQuestTrackerTitle;
+        .QuestTrackerBlogListItemTitle {
+          font-size: 0.9rem;
+          &:hover {
+            color: #fff;
+          }
+        }
+        .QuestTrackerBlogListItemDate {
+          font-size: 0.7rem;
+        }
+      }
+      .QuestTrackerBlogListItemContent {
+        color: $wowUiQuestTrackerTitle;
+        font-size: 0.7rem;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .WowQuestTrackerFooter {
+    background: rgb(172, 110, 10);
+    background: radial-gradient(
+      circle,
+      rgba(121, 79, 11, 0.5) 0%,
+      rgba(107, 69, 7, 0.5) 47%,
+      rgba(60, 41, 12, 0.2) 74%,
+      rgba(50, 34, 6, 0.1) 100%
+    );
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    // border-top: 0px solid rgba($wowUiQuestMark, 0.5);
+    border-bottom: 1px solid rgba($wowUiQuestMark, 0.5);
+    // text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    // padding-right: 1rem;
+    align-items: center;
+    .QuestTrackerFooterCopyright {
+      font-family: $WowUiBlueTrackerFont;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      color: $wowUiQuestTrackerTitle;
+      text-shadow: 2px 2px 2px #000;
+      svg {
+        // border: 1px solid red;
+        // margin-top: 0.5rem;
+        font-size: 0.7rem;
+        // box-shadow: 2px 2px 2px #000;
+        -webkit-filter: drop-shadow(2px 2px 2px #000);
+        filter: drop-shadow(2px 2px 2px #000);
+      }
+    }
+    .QuestTrackerFooterLinks {
+      padding: 0 1rem;
+      color: $wowUiQuestTrackerTitle;
+      font-size: 0.8rem;
+      text-shadow: 2px 2px 2px #000;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      .QuestTrackerLink {
+        &:hover {
+          color: #fff;
+        }
+        a {
+          color: $wowUiQuestTrackerTitle;
+          &:hover {
+            color: #fff;
+          }
+          svg {
+            // border: 1px solid red;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            // box-shadow: 2px 2px 2px #000;
+            -webkit-filter: drop-shadow(2px 2px 2px #000);
+            filter: drop-shadow(2px 2px 2px #000);
+          }
+        }
+        // border: 1px solid red;
+      }
+    }
+  }
+}
+
+.rosterContainer {
+  // width: 1000px;
+  .rosterTitleBar,
+  .rosterSingle {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr 0.6fr 3fr;
+    column-gap: 1rem;
+    // justify-items: center;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    background-color: $wowUiBgHover;
+    padding: 0.3rem 0.5rem;
+    border-radius: $border-radius;
+    // border: 1px solid red;
+  }
+  .rosterTitleBar {
+    color: $wowUiQuestMark;
+  }
+
+  // .rosterSingle {
+  //   opacity: 0.2;
+  // }
+
+  .rosterSingleClassSpecCov,
+  .rosterSingleGear,
+  .rosterTitleClassSpecCov,
+  .rosterTitleBarRole,
+  .rosterSingleWowRio {
+    text-align: center;
+  }
+  .rosterSingleClassSpecCov,
+  .rosterSingleWowRio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    img {
+      border: 1px solid $wowUiBorderLight;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .rosterSingle {
+    .crown {
+      svg {
+        color: $gold;
+        margin-right: 0.2rem;
+      }
+    }
+  }
+  .rosterSingleGear {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    gap: 0.2rem;
+    img {
+      border: 1px solid $wowUiBorderLight;
+      border-radius: 20%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  //RosterContainer
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(1, 1fr);
+  // row-gap: 4rem;
+
+  .rosterSingleTwo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto 1fr;
+    // border: 1px solid red;
+
+    .wowAvatar {
+      width: 5rem;
+      height: 5rem;
+      background-position: center 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      border: 1px solid $gold;
+      // img {
+      //   width: 4rem;
+      //   border-radius: 50%;
+      //   border: 2px solid $gold;
+      // }
+    }
+
+    .rosterCharInfo {
+      .rosterCharName {
+        // border: 1px solid green;
+        padding-left: 0.5rem;
+        .crown {
+          svg {
+            font-size: 0.8rem;
+            color: $gold;
+            margin-right: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .HomeViewBlogPostContainer {
+//   // z-index: 9;
+//   font-family: "Friz Quadrata TT";
+//   display: flex;
+//   // // position: absolute;
+//   position: relative;
+//   margin: 0 auto;
+//   // // top: 5vh;
+//   // justify-content: center;
+//   width: 100%;
+//   // // padding: 0;
+//   // // margin: 0;
+//   // // max-height: 90vh;
+
+// }
+.WowFrameBlogPost {
+  border: 1px solid $wowUiBlueTrackerBlueDark;
+  padding: 1rem 2rem;
+  width: 60rem;
+  max-height: 70vh;
+  background-color: rgba(30, 33, 41, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 2px;
+  // overflow: auto;
+  color: $wowUiBlueTrackerBlueLight;
+  font-family: $WowUiBlueTrackerFont;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 0.9rem;
+  box-shadow: 0px 0px 15px #000;
+  // overflow: hidden;
+  // padding-bottom: 1rem;
+  margin: 0 auto;
+  overflow-y: auto;
+
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  .titleBar {
+    background-color: $wowUiBlueTrackerTitelBg;
+    border: 1px solid $wowUiBlueTrackerBlueDark;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .postedAt {
+      color: $wowUiBlueTrackerGrey;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+    }
+
+    .closeBtn {
+      // width: 1.7rem;
+      // height: 1.7rem;
+      // border: 1px solid red;
+      svg {
+        vertical-align: middle;
+      }
+      &:hover {
+        color: $wowUiBlueTrackerBlueDark;
+      }
+    }
+  }
+  p {
+    padding: 1rem 1rem;
+  }
+  img {
+    width: 80%;
+    border: 1px solid $wowUiBlueTrackerBlueLight;
+    box-shadow: 0px 0px 15px #000;
+    margin: auto;
+    display: block;
+  }
+
+  .killPostRoster {
+    margin-top: 1rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    // background-color: rgba($wowUiBlueTrackerTitelBg, 0.8);
+    // border: 1px solid $wowUiBlueTrackerBlueDark;
+    padding: 0rem 0;
+    div {
+      text-align: center;
+    }
+  }
+}
+
+.WowRaidFrames {
+  // border: 1px solid $wowUiBlueTrackerBlueLight;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+
+  .WowRaidFrameSingle {
+    width: 9rem;
+    height: 1.5rem;
+    text-shadow: 0px 0px 0px #000;
+    font-family: $WowUiBlueTrackerFont;
+    font-size: 0.8rem;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+    color: $wowUiBg;
+    -webkit-box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.7);
+    > div {
+      // border: 1px solid red;
+      // padding-left: 0.2rem;
+      position: relative;
+      bottom: 0.1rem;
+    }
+    > .zeroicofont {
+      line-height: 1.8rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $wowUiBlueTrackerBlueLight rgba(30, 33, 41, 0.7);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 1px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(30, 33, 41, 0.7);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $wowUiBlueTrackerBlueLight;
+  border-radius: 10px;
+  border: 1px solid $wowUiBlueTrackerBlueLight;
+}

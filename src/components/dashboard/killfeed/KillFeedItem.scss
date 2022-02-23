@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.modal {
+  .killfeedDefeatedAt {
+    margin-left: 0.5rem;
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+
+  .killfeedRoster {
+    background: $bg-dark;
+    padding: 1rem 2rem;
+  }
+
+  .killfeedDetailBody > .killfeedDetailRow {
+    margin-bottom: 1rem;
+    .killfeedDetailTitle {
+      margin-right: 0.5rem;
+      font-weight: 500;
+    }
+  }
+  .killfeedDetailBody .killfeedDetailRow:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.killFeedItemContainer {
+  background-color: $bg-dark;
+  color: $gold;
+  border: 1px solid $gold;
+  border-radius: $border-radius;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: stretch;
+}

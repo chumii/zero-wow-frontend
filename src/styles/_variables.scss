@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Friz Quadrata TT";
+  src: url("../../public/fonts/frizqt__.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$WowUiBlueTrackerFont: "Poppins", sans-serif;
+
+$icomoon-font-family: "zero" !default;
+$icomoon-font-path: "../public/fonts" !default;
+
+$icon-castericon: "\e905";
+$icon-dpsicon: "\e906";
+$icon-healicon: "\e907";
+$icon-tankicon: "\e908";
+$icon-warcraftlogs: "\e904";
+$icon-hearthstone: "\e903";
+$icon-alliance: "\e900";
+$icon-raiderio: "\e901";
+$icon-wow: "\e902";
+
+$dk: rgb(196, 31, 59);
+$dh: rgb(163, 48, 201);
+$druid: rgb(255, 125, 10);
+$hunter: rgb(171, 212, 115);
+$mage: rgb(105, 204, 240);
+$monk: rgb(0, 255, 150);
+$paladin: rgb(245, 140, 186);
+$priest: rgb(255, 255, 255);
+$rogue: rgb(255, 245, 105);
+$shaman: rgb(0, 112, 222);
+$warlock: rgb(148, 130, 201);
+$warrior: rgb(199, 156, 110);
+
+$chatGeneral: #fec1c0;
+$chatSystemMessages: #ffff00;
+$chatGuild: #3ce13f;
+$chatOfficer: #40bc40;
+$chatParty: #aaabfe;
+$chatPartyLeader: #77c8ff;
+$chatLinkedSpells: #67bcff;
+$chatSay: #ffffff;
+$chatWhisper: #ff7eff;
+$chatYell: #ff3f40;
+$chatEmote: #ff7e40;
+$chatInstance: #ff7d01;
+$chatInstanceLeader: #ff4709;
+$chatRaidWarning: #ff4700;
+$chatAchievement: #fffc01;
+$chatBattleNetWhisper: #00faf6;
+$chatBattleNetConversation: #00adef;
+
+$itemPoor: #889d9d;
+$itemCommon: #ffffff;
+$itemUncommon: #1eff0c;
+$itemRare: #0070ff;
+$itemSuperior: #a335ee;
+$itemLegendary: #ff8000;
+$itemHeirloom: #e6cc80;
+
+$alliance: #162c57;
+$alliance_rgb: rgb(22, 44, 87);
+
+$bg-dark: #1a1c22;
+$bg-dark-border: #2c2e35;
+$bg-body: #1e232a;
+$bg-body-darker: rgba(23, 28, 35, 0.5);
+$bg-light: #393944;
+
+$gold: #d3ba86;
+$gold-rgb: rgb(211, 186, 134);
+$offwhite: #f8f8ff;
+
+$mint: #9cfada;
+
+$grun: #1f881e;
+
+$colorIn: #93c47d;
+$colorInOff: #6fa8dc;
+$colorInTwink: #d5a6bd;
+$colorBackup: #ffd966;
+$colorAbg: #e69138;
+$colorOut: #cc4125;
+
+$border-radius: 10px;
+
+$wowUiBorderRadius: 0.3rem;
+
+$wowUiBg: rgb(40, 35, 34);
+$wowUiBgHover: rgb(53, 49, 48);
+$wowUiBorderLight: #989898;
+$wowUiCloseBtnBg: rgb(83, 4, 1);
+$wowUiCloseBtnBgHover: rgb(99, 17, 14);
+$wowUiCloseBtnFont: #eaaf72;
+$wowUiQuestMark: rgb(255, 175, 45);
+$wowUiQuestTrackerTitle: rgb(255, 208, 0);
+$wowUiBlueTrackerBlueLight: rgb(0, 192, 255);
+$wowUiBlueTrackerBlueDark: rgb(26, 51, 100);
+$wowUiBlueTrackerTitelBg: rgb(22, 22, 24);
+$wowUiBlueTrackerGrey: rgb(193, 193, 193);

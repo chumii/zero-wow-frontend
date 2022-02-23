@@ -1,0 +1,71 @@
+@import "../../../styles/variables";
+
+$iconSizeItems: 48px;
+$iconSizeClass: 24px;
+
+.singleSetupItemContainer {
+  background-color: $bg-dark;
+  color: $gold;
+  border: 1px solid $gold;
+  border-radius: $border-radius;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: stretch;
+
+  .singleSetupItemRaidInfo {
+    display: flex;
+    align-items: center;
+    img {
+      width: $iconSizeItems;
+      height: $iconSizeItems;
+      border: 1px solid $gold;
+      border-radius: $border-radius;
+      margin-right: 1rem;
+    }
+  }
+  .singleSetupDateInfo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // border: 1px solid $gold;
+    gap: 1rem;
+
+    .postedAt {
+      font-size: 0.8rem;
+      color: $gold;
+    }
+    .nextDate {
+      color: $itemSuperior;
+    }
+  }
+
+  .singleSetupButtonContainer {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+
+    * {
+      padding: 0;
+      margin: 0;
+      // border: 1px solid yellow;
+    }
+    .ico {
+      // cursor: pointer;
+      &:hover {
+        color: $itemPoor;
+      }
+    }
+  }
+}

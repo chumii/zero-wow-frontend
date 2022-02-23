@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.blogListItemContainer {
+  background-color: $bg-dark;
+  border: 1px solid $gold;
+  border-radius: $border-radius;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  // align-content: center;
+  gap: 1rem;
+
+  .titleCol {
+    flex-grow: 1;
+  }
+
+  .dateCol {
+    color: $itemPoor;
+  }
+}

@@ -1,0 +1,212 @@
+@import "../../styles/variables";
+
+.newSetupContainer {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  .row > * {
+    padding: 0;
+    margin: 0;
+  }
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: $bg-dark;
+  border: 1px solid $gold;
+  border-radius: $border-radius;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  row-gap: 0.5rem;
+  width: 100%;
+
+  // .newSetupBossRow,
+  // .newSetupPlayerRow {
+  //   display: grid;
+  //   grid-template-columns: 8rem repeat(12, 1fr);
+  // }
+
+  .newSetupPlayerRow {
+    margin-bottom: 0.1rem;
+    gap: 0.1rem;
+    * {
+      padding: 0.1rem;
+      text-align: center;
+      // border: 1px solid red;
+    }
+    .optionButton {
+      height: 100%;
+    }
+  }
+  .newSetupBossRow {
+    margin: 0;
+    padding: 0;
+    .newSetupBossCol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      // border: 1px solid red;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: $border-radius;
+        border: 1px solid $gold;
+        margin-bottom: 0.3rem;
+      }
+      .newSetupBossName {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .setupLegende {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // width: 15%;
+      // border: 1px solid red;
+      span.legendeLeft {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+      }
+      span.legendeRight {
+        display: block;
+        font-size: 0.8rem;
+        color: $gold;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .setupPlayerOptionButtonIn {
+    background-color: $colorIn;
+    // color: $colorIn;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonInOff {
+    background-color: $colorInOff;
+    // color: $colorInOff;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonInTwink {
+    background-color: $colorInTwink;
+    // color: $colorInTwink;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonBackup {
+    background-color: $colorBackup;
+    // color: $colorBackup;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonAbg {
+    background-color: $colorAbg;
+    // color: $colorAbg;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonOut {
+    background-color: $colorOut;
+    // color: $colorOut;
+    // height: 100%;
+  }
+
+  .death-knight,
+  .deathknight {
+    color: $dk;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .demon-hunter,
+  .demonhunter {
+    color: $dh;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .druid {
+    color: $druid;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .hunter {
+    color: $hunter;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .mage {
+    color: $mage;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .monk {
+    color: $monk;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .paladin {
+    color: $paladin;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .priest {
+    color: $priest;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .rogue {
+    color: $rogue;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .shaman {
+    color: $shaman;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .warlock {
+    color: $warlock;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .warrior {
+    color: $warrior;
+    background-color: $bg-body;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

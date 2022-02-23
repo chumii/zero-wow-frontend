@@ -1,0 +1,180 @@
+@import "../../styles/variables";
+
+.prepareSetupContainer {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  .row > * {
+    padding: 0;
+    margin: 0;
+  }
+  background-color: $bg-dark;
+  border: 1px solid $gold;
+  border-radius: $border-radius;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  .prepareSetupToggleBossWrapper {
+    display: flex;
+    flex-direction: row;
+    .printSetupBossName {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      row-gap: 0.5rem;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-size: 0.6rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      // border: 1px solid green;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: $border-radius;
+        border: 1px solid $gold;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  .printSetupBosses {
+    margin: 0;
+    padding: 0;
+
+    .printSetupBossCol {
+      text-align: center;
+      gap: 0.3rem;
+
+      .printSetupPlayerName {
+        background-color: $bg-body;
+        margin-right: 0rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1rem;
+      }
+
+      .printSetupBossName {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        row-gap: 0.5rem;
+      }
+
+      .setupPlayerOptionButtonIn {
+        background-color: $colorIn;
+        color: $colorIn;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+      .setupPlayerOptionButtonInOff {
+        background-color: $colorInOff;
+        color: $colorInOff;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+      .setupPlayerOptionButtonInTwink {
+        background-color: $colorInTwink;
+        color: $colorInTwink;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+      .setupPlayerOptionButtonBackup {
+        background-color: $colorBackup;
+        color: $colorBackup;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+      .setupPlayerOptionButtonAbg {
+        background-color: $colorAbg;
+        color: $colorAbg;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+      .setupPlayerOptionButtonOut {
+        background-color: $colorOut;
+        color: $colorOut;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      }
+
+      .printSetupBossName {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+        // border: 1px solid green;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: $border-radius;
+          border: 1px solid $gold;
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .setupLegende {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // width: 15%;
+      // border: 1px solid red;
+      span.legendeLeft {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+      }
+      span.legendeRight {
+        display: block;
+        font-size: 0.8rem;
+        color: $gold;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .setupPlayerOptionButtonIn {
+    background-color: $colorIn;
+    // color: $colorIn;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonInOff {
+    background-color: $colorInOff;
+    // color: $colorInOff;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonInTwink {
+    background-color: $colorInTwink;
+    // color: $colorInTwink;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonBackup {
+    background-color: $colorBackup;
+    // color: $colorBackup;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonAbg {
+    background-color: $colorAbg;
+    // color: $colorAbg;
+    // height: 100%;
+  }
+  .setupPlayerOptionButtonOut {
+    background-color: $colorOut;
+    // color: $colorOut;
+    // height: 100%;
+  }
+}
