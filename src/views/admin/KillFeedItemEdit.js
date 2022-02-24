@@ -39,7 +39,7 @@ const KillFeedItemEditView = (props) => {
   async function getBlogPost(id) {
     const response = await getBossKillById(id);
     setPost(response.data);
-    console.log(response.data);
+    // console.log(response.data);
   }
 
   const handleChange = (event) => {

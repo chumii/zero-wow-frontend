@@ -15,7 +15,7 @@ const GuildRecruitOpen = () => {
     // console.log(response);
   };
 
-  console.log(recruits);
+  // console.log(recruits);
   return (
     <div>
       <p>

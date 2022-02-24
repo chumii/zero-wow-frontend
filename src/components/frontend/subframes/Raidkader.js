@@ -5,7 +5,7 @@ import RaidkaderSingleMember from "./RaidkaderSingleMember";
 
 const Raidkader = () => {
   const [roster, setRoster] = useState([]);
-  const leitung = ["Olympea", "Karen", "Cevapchiji", "Kerrídwen"];
+  const leitung = ["Olympea", "Karen", "Cevapchiji", "Nirlendra"];
 
   useEffect(() => {
     getRoster();
@@ -47,7 +47,7 @@ const Raidkader = () => {
         } else return null;
       })}
       {roster.map((member) => {
-        if (member.isActive && member.name === "Kerrídwen") {
+        if (member.isActive && member.name === "Nirlendra") {
           return <RaidkaderSingleMember key={member._id} member={member} />;
         } else return null;
       })}

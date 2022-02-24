@@ -34,7 +34,7 @@ const ZeroArchiveFrame = (props) => {
     props.onBlogPostClick(post);
   };
 
-  console.log(allPosts);
+  // console.log(allPosts);
 
   return (
     <div className="WowFrame">

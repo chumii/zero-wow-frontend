@@ -47,6 +47,7 @@ const RosterView = () => {
   async function getRoster() {
     const response = await getAllMember();
     const memberData = await response.data;
+    // const sortedRoster = memberData;
     const sortedRoster = memberData.sort((a, b) =>
       a.profile.class.localeCompare(b.profile.class)
     );

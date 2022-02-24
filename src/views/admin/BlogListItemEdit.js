@@ -38,7 +38,7 @@ const BlogListItemEditView = (props) => {
   async function getBlogPost(id) {
     const response = await getBlogPostById(id);
     setPost(response.data);
-    console.log(response.data);
+    // console.log(response.data);
   }
 
   const handleChange = (event) => {

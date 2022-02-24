@@ -111,7 +111,7 @@ const PrepareSetupView = () => {
   };
 
   // const displayStyle = [{ display: "block" }, { display: "none" }];
-  console.log(bosses);
+  // console.log(bosses);
   return (
     <div className="adminContainer">
       <div className="adminSidebar">

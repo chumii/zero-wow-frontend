@@ -10,7 +10,7 @@ const WowFrameBlogPost = (props) => {
   const date = new Date(post.postedAt);
   const formatDate = new Intl.DateTimeFormat("de-DE").format(date);
   // const logoSvg = process.env.PUBLIC_URL + "/img/logo.svg";
-  console.log(post);
+  // console.log(post);
   return (
     // <div className="HomeViewBlogPostContainer">
     <div className="WowFrameBlogPost">

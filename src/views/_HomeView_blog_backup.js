@@ -40,7 +40,7 @@ const HomeView = () => {
   // });
   // console.log(myArray);
 
-  console.log(allPosts);
+  // console.log(allPosts);
 
   return (
     <div className="container mt-5">

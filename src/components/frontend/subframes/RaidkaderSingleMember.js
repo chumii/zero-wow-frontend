@@ -7,7 +7,7 @@ import { FaCrown } from "react-icons/fa";
 const RaidkaderSingleMember = (props) => {
   const member = props.member;
   const [gearSet, setGearSet] = useState([]);
-  const leitung = ["Olympea", "Karen", "Cevapchiji", "Kerrídwen"];
+  const leitung = ["Olympea", "Karen", "Cevapchiji", "Nirlendra"];
 
   useEffect(() => {
     setGearSet(member.profile.gear.items);
