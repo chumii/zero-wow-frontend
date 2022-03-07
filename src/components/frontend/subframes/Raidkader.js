@@ -42,7 +42,7 @@ const Raidkader = () => {
         } else return null;
       })}
       {roster.map((member) => {
-        if (member.isActive && member.name === "Karen") {
+        if (member.isActive && member.name === "Faithroll") {
           return <RaidkaderSingleMember key={member._id} member={member} />;
         } else return null;
       })}
