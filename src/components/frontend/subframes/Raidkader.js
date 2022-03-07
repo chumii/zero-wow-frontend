@@ -5,7 +5,7 @@ import RaidkaderSingleMember from "./RaidkaderSingleMember";
 
 const Raidkader = () => {
   const [roster, setRoster] = useState([]);
-  const leitung = ["Olympea", "Karen", "Cevapchiji", "Nirlendra"];
+  const leitung = ["Olympea", "Faithroll", "Cevapchiji", "Nirlendra"];
 
   useEffect(() => {
     getRoster();
